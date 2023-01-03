@@ -7,35 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style5.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Contacto. Hotel California</title>
 </head>
 <body>
 <header> 
-   <section><a href="../index.html"><img id="hotellogo" src="../assets/images/Hotel logo.png" width="200" height="80" alt="logo Hotel"></a></section>
+   <section><a href="../index.html"><img class="logohotel1" id="hotellogo" src="../assets/images/Hotel logo.png" width="200" height="80" alt="logo Hotel"></a></section>
     <ul> <li> <a href="../pages/pagina1.html">El Hotel</a></li> <li> <a href="../pages/pagina2.html">Habitaciones</a></li> <li><a href="../pages/pagina3.html">Servicios</a></li> <li><a href="../pages/pagina4.html">Contacto</a></li> </ul>
 
 </header>
-<main>
-    <img  src="../assets/images/hotel frio.webp" width="750" height="225" alt="Hotel lado">
+<main id="maincontacto">
+    <div id="imgcontacto"><img  class="breakpoint" src="../assets/images/hotel frio.webp" width="750" height="225" alt="Hotel lado"></div> 
     
-    <p>¿Como te podemos ayudar?</p>
-    <form action="" method="post" enctype="text/plain">
-        <div>
-            <label for="Nombre">Nombre/First Name<input type="text" id="Nombre" placeholder="Nombre/First Name">
-                
-            </label></div>
-            <div>
-                <label for="apellido">Apellido/Last name<input type="text" id="apellido" placeholder="Apellido/Lastname">
-                    
-                </label></div>
-                <div>
-                    <label for="E-mail">E-mail<input type="email" id="email" placeholder="mail@mail.com">
-                        
-                    </label></div>
+    <div style="text-align: center;" id="textocontacto"><p>¿Como te podemos ayudar?</p> </div>
+   <div id="formcontacto"><form style="display: block; text-align: center; justify-content: center; padding: 10px;" action="" method="post" enctype="text/plain">
+    <div style="padding: 10px;">
+        <label for="Nombre">Nombre/First Name<input type="text" id="Nombre" placeholder="Nombre/First Name">
+            
+        </label></div>
+        <div style="padding: 10px;"> <label for="apellido">Apellido/Last name<input type="text" id="apellido" placeholder="Apellido/Lastname"></label></div>
+            <div style="padding: 10px;"><label for="E-mail">E-mail<input type="email" id="email" placeholder="mail@mail.com"></label></div> </div> 
 
-        <div><textarea name="" id="texto" cols="100" rows="10" placeholder="¿En que te podemos ayudar?"></textarea></div>
-        <input type="submit">
+        <div id="cajadetextocontacto"><textarea name="" id="texto" cols="100" rows="10" placeholder="¿En que te podemos ayudar?"></textarea></div>
+        <div id="inputcontacto"><input type="submit"></div>
     </form>
     
 </main>

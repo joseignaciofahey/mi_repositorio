@@ -5,20 +5,24 @@
 
 }
 
+html {
+    height: 100%;
+}
+
+
 #gridcuerpo{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    overflow-x: auto;
+    text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 100px;
+    min-height: 100%;
     grid-template-areas: 
-    "header header header header header header"
-    "main main main main main main"
-    "main main main main main main"
-    "main main main main main main"
-    "main main main main main main"
-    "footer footer footer footer footer footer"
-    
+    "header"
+    "main"
+    "footer"
     ;
    
 }
@@ -51,9 +55,7 @@ main{
     grid-area: main;
     position: sticky;
     display: grid;
-    grid grid-area: main;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: main;
     grid-template-areas: 
     ". titulodelhotel titulodelhotel titulodelhotel . "
     ". textodelhotel textodelhotel textodelhotel . "
@@ -63,6 +65,18 @@ main{
    
 }
 
+#tablas2{
+    display: block;
+    padding-bottom: 40px;
+    
+}
+
+.tabla{
+    display: flex;
+    justify-content: center;
+
+}
+
 .breakpoint{
     max-width: 100%;
     display: inline-block;
@@ -70,12 +84,52 @@ main{
 
 #logodelhotel{
     grid-area: logodelhotel;
+    
 }
+
+.logohotel1{
+    transition: .2s;
+}
+
+.logohotel1:hover{
+    
+    transform: scale(1.10);
+}
+
+
 
 #botonesheader{
     display: inline;
 }
 
+#botonhotel {
+    font-weight: bold;
+    border: 0.5px solid;
+    background-color: white;
+    
+    
+
+} 
+
+
+
+#botonhabitaciones{
+    font-weight: bold;
+    border: 0.5px solid;
+    background-color: white;
+}
+
+#botonservicios{
+    font-weight: bold;
+    border: 0.5px solid;
+    background-color: white;
+}
+
+#botoncontactos{
+    font-weight: bold;
+    border: 0.5px solid;
+    background-color: white;
+}
 
 #titulodelhotel{
    
@@ -103,21 +157,138 @@ text-align: center;}
 }
 
 #elinput{
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     grid-area: elinput;
     text-align: center;
+
 }
+
+#mainnuestrohotel{
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    justify-content: center ;
+}
+
+#textohotelhotel{
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#fotohotelafuera{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#fotopileta{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#mainservicios{
+    display: block;
+    justify-content: center;
+}
+
+#pool{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#pooltxt{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 30px;
+}
+
+#comida{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-left: 30%;
+    padding-right: 30%;
+    
+}
+
+#comidatxt{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 30px;
+}
+
+#reserva{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#reservatxt{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 30px;
+}
+
+#maincontacto{
+    display: block;
+    justify-content: center;
+}
+
+#imgcontacto{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#textocontacto{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#formcontacto{
+    display: flex;
+    justify-content: center;
+}
+
+#cajadetextocontacto{
+    display: flex;
+    justify-content: center;
+}
+
+#inputcontacto
 
 #tabla{
     justify-items: center;
 }
 
 footer{
-    width: 100vw;
+    width: 100%;
     position: fixed;
     bottom: 0;
     font-family: 'Cabin', sans-serif;
-    display: flex;
+        display: grid;
+    grid-template-columns: "1fr";
+    grid-template-rows: .5fr .5fr ;
+    align-items: center;
     font-size: small;
     background-color: lightblue;
     text-align: center;
@@ -127,27 +298,64 @@ display: inline;
 }
 
 
-@media screen (max-width:1200px) {
-    .body
+@media screen and (max-width:1200px) { 
+    .griddelcuerpo{  
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+
+    }
     
 }
 
-@media screen (max-width:1024px) {
-    .body
+    
+
+
+@media screen and  (max-width:1024px) { 
+    .griddelcuerpo{  
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+
+    }
     
 }
 
-@media screen (max-width:768px) {
-    .body
+@media screen and  (max-width:768px) { 
+    .griddelcuerpo{  
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+
+    }
     
 }
 
-@media screen (max-width:480px) {
-    .body
+
+@media screen and (max-width:480px) 
+{ 
+    .griddelcuerpo{  
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+
+    }
     
 }
 
-@media screen (max-width:320) {
-    .body
+
+@media screen and (max-width:320px) 
+{ 
+    .griddelcuerpo{  
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+
+    }
     
 }
