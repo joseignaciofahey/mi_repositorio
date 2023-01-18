@@ -1,0 +1,28 @@
+$vista: desktop;
+
+
+body{ @if $vista == desktop{
+        @media screen and (max-width:1200px) { 
+            .griddelcuerpo {  
+                grid-template-areas: 
+                "header"
+                "main"
+                "footer"}
+        }
+        
+    }
+
+    @else { 
+        @media screen and  (max-width:1024px)  { 
+            .griddelcuerpo{  
+                grid-template-areas: 
+                "header"
+                "main"
+                "footer"}
+            
+    }
+
+        }
+        
+
+}

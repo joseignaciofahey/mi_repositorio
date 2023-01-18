@@ -1,0 +1,151 @@
+main{
+    font-family: 'Cabin', sans-serif;
+    grid-area: main;
+    position: sticky;
+    display: grid;
+    grid-area: main;
+    grid-template-areas: 
+    ". titulodelhotel titulodelhotel titulodelhotel . "
+    ". textodelhotel textodelhotel textodelhotel . "
+    ". fotodelhotel fotodelhotel fotodelhotel . "
+    ". titulodeinput titulodeinput titulodeinput . "
+    ". elinput elinput elinput . ";
+
+    #tablas2 {
+        display: block;
+        padding-bottom: 40px;
+        
+    }
+    
+    .tabla{
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .breakpoint{
+        max-width: 100%;
+        display: flex;
+        
+    }
+       
+    #titulodelhotel{
+       
+        grid-area: titulodelhotel;
+        align-items: center;
+        text-align: center;
+    }
+    #textodelhotel
+    {grid-area:textodelhotel;
+    justify-items: center;
+    text-align: center;}
+    
+    #fotodelhotel{
+        grid-area: fotodelhotel;
+        justify-items: center;
+        padding: 20px;
+    }
+    
+    #titulodeinput{
+        justify-content: center;
+        grid-area: titulodeinput;
+        text-align: center;
+        padding-bottom: 20px;
+    
+    }
+    
+    #elinput{
+        padding-bottom: 100px;
+        grid-area: elinput;
+        text-align: center;
+    
+    }
+    
+    #mainnuestrohotel{
+        display: flex;
+        flex-wrap: wrap;
+        display: block;
+        justify-content: center ;
+    }
+    
+    #textohotelhotel{
+        display: flex;
+        justify-content: center;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    #fotohotelafuera{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    #fotopileta{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    
+    #mainservicios{
+        display: block;
+        justify-content: center;
+    }
+    
+    #pool{
+        @include fotospag3;
+    }
+    
+    #pooltxt{
+        @include textospag3;
+    }
+    
+    #comida{
+        @include fotospag3;
+        
+    }
+    
+    #comidatxt{
+        @include textospag3;
+    }
+    
+    #reserva{
+        @include fotospag3;
+    }
+    
+    #reservatxt{
+        @include textospag3;
+    }
+    
+    #maincontacto{
+        display: block;
+        justify-content: center;
+    }
+    
+    #imgcontacto{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    
+    #textocontacto{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    
+    #formcontacto{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #cajadetextocontacto{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #tabla{
+        justify-items: center;
+    }
+}
