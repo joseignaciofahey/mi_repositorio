@@ -1,0 +1,24 @@
+.mainelhotel{
+    display: block;
+    text-align: center;
+  
+    .textohotelhotel, .textohotelhotel2{
+      width: fit-content;
+      padding-left: 20%;
+      padding-right: 20%;
+      margin-top: 20px;
+    }
+  
+    .contenedorfotohotel{
+      align-self: center;
+      margin-top: 30px ;
+  
+      img{
+        
+  
+        &.imgfotopileta{
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }

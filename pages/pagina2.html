@@ -13,14 +13,23 @@
     <title>Habitaciones Hotel California</title>
 </head>
 <body>
-    <header> 
-        <section><a class="botonhover" href="../index.html"><img class="logohotel1" id="hotellogo" src="../assets/images/Hotel logo.png" width="200" height="80" alt="logo Hotel california bariloche"></a></section>
-         <ul> <li> <a class="botonhover" href="../pages/pagina1.html">El Hotel</a></li> <li> <a class="botonhover" href="../pages/pagina2.html">Habitaciones</a></li> <li><a class="botonhover" href="../pages/pagina3.html">Servicios</a></li> <li><a class="botonhover" href="../pages/pagina4.html">Contacto</a></li> </ul>
-     
-     </header>
-     <main id="tablas2" style="display: block;">
+  <header class="header">
+    <h1 class="logo"><a href="../index.html" class="enlacelogo"><img class="logohotel1" src="../assets/images/Hotel logo.png" alt="logo hotel california Bariloche ">
+    </h1>
+        <nav class="menu">
+                <a class="botonhover" id="botonhotel" style="text-decoration: none;" href="../pages/pagina1.html">EL HOTEL</a>
+                <a class="botonhover" id="botonhabitaciones" style="text-decoration: none;" href="../pages/pagina2.html">HABITACIONES</a>
+                <a  class="botonhover" id="botonservicios" style="text-decoration: none;" href="../pages/pagina3.html">SERVICIOS</a>
+                <a class="botonhover" id="botoncontactos" style="text-decoration: none;" href="../pages/pagina4.html">CONTACTO</a>
+                </nav>
+                                
+</header>
+     <main class="mainhabitaciones" >
         
-          <table class="tabla" style="justify-items: center; text-align: center;">
+
+
+
+          <table class="tabla" >
 
                 <tr>
               
@@ -30,13 +39,13 @@
               
                 <tr>
               
-                  <td><img src="../assets/images/Habitacion standart.jpg" width="300" alt=""></td>
+                  <td><img class="habitacionesimg" src="../assets/images/Habitacion standart.jpg" width="300" alt=""></td>
               
                 </tr> 
                 
                 <tr>
               
-                    <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, maxime!</p></td>
+                    <td><p class="textohabitaciones">La habitación estándar del Hotel California Bariloche es acogedora y cómoda, con todas las comodidades necesarias para una estancia placentera.</p></td>
                 
                   </tr>
 
@@ -52,8 +61,8 @@
 
                 <tr>
                   <td id="habitacion2">Habitación vista al lago</td></tr>
-                <tr><td><img src="../assets/images/Habitacion vista al lago.jpg" width="300" alt=""></td> </tr>
-                <tr><td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, maxime!</p></td></tr> 
+                <tr><td><img class="habitacionesimg" src="../assets/images/Habitacion vista al lago.jpg" width="300" alt=""></td> </tr>
+                <tr><td><p class="textohabitaciones">La habitación con vista al lago del Hotel California Bariloche ofrece impresionantes vistas panorámicas del lago Nahuel Huapi y las montañas circundantes, creando un ambiente relajante y escénico para sus huéspedes.!</p></td></tr> 
                 <tr><td><button> <p>Consultar disponibilidad</p> <input type="submit"></button></td></tr>
                 
               </table>
@@ -61,23 +70,22 @@
               <table class="tabla" style="justify-items: center; text-align: center;">
 
                 <tr><td id="habitacion3">Suite </td> </tr>
-                <tr><td><img src="../assets/images/suite.jpg" width="300" alt=""></td> </tr>
-                <tr><td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, maxime!</p></td> </tr> 
+                <tr><td><img class="habitacionesimg" src="../assets/images/suite.jpg" width="300" alt=""></td> </tr>
+                <tr><td><p class="textohabitaciones">La suite del Hotel California Bariloche es un espacio de lujo con sala de estar amplia, dormitorio privado, baño en suite y vistas impresionantes al lago y las montañas.</p></td> </tr> 
                 <tr><td><button> <p>Consultar disponibilidad</p> <input type="submit"></td></tr>
 
               </table>
 
             
         </main>
-     <footer style=" position:fixed; padding: 0px; max-height: 40px; display: flex; flex-direction: column; flex: 1; bottom: 0;">
-        <ul style="list-style: none; display: flex; flex-direction: row; justify-content: center;">
-            <li><p>Hotel California - Bariloche - Patagonia - 2022
-            </p></li> 
-            <li><a href="https://www.facebook.com/"><img src="../assets/images/Logo fb.png" width="15" height="15" alt="instagram"></a> </li>
-            <li><a href="https://www.instagram.com/"><img src="../assets/images/Logo ig.png" width="15" height="15" alt="instagram"></a> </li>
-            <li><a href="https://wa.me/5555555555555"><img src="../assets/images/Logo warap.png" width="15" height="15" alt="instagram"></a> </li>
-        </ul>
-
-    </footer>
+        <footer class="footer"> 
+          <div class="redesfooter">
+              <ul class="footerlista">
+                  <li><a href="https://www.facebook.com/"><img class="footericonos" src="../assets/images/Logo fb.png"  alt="instagram"></a> </li>
+                  <li><a href="https://www.instagram.com/"><img class="footericonos" src="../assets/images/Logo ig.png"  alt="instagram"></a> </li>
+                  <li><a href="https://wa.me/5555555555555"><img class="footericonos" src="../assets/images/Logo warap.png"  alt="instagram"></a> </li>
+               </ul>
+          </div>
+      </footer> 
 </body>
 </html>

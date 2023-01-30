@@ -1,54 +1,34 @@
-header{
-    width: 100vh;
-    margin: 0;
-    grid-area: header;
+.header {
+    height: 100px;
+    background-color: lightblue;
+    padding: 50px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    display: block;
-    text-align: center;
-    grid-template-columns: ".5fr";
-    grid-template-rows: .5fr .5fr ;
-    align-items: center;
-    grid-template-areas: 
-    "logodelhotel"
-    "botonesheader"
-    ;
-    justify-content: center
-    ;
-    font-family: 'Cabin', sans-serif;
-    background-color: $colorprincipal;
-
-        ul li{
-                display: inline
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: large;
+  
+    .logo {
+      .logohotel1 {
+        width: 50%;
+        transition: ease-in 0.3s;
+  
+        &:hover {
+          transform: scale(1.07);
         }
-        #logodelhotel{
-            grid-area: logodelhotel;  
-            justify-content: center;        
+      }
+    }
+  
+    .menu {
+      a.botonhover {
+        padding: 5px;
+        transition: 0.3s;
+  
+        &:hover {
+          color: white;
         }
-        .logohotel1{
-            transition: .2s;
-            &:hover{
-                transform: scale(1.10);
-            }
-        #botonesheader{
-                display: inline;
-            }
-            
-        #botonhotel {
-                @include botonesheaderstyle
-            } 
-            
-            
-        #botonhabitaciones{
-                @include botonesheaderstyle
-                
-            }
-            
-        #botonservicios{
-                @include botonesheaderstyle
-            }
-            
-        #botoncontactos{
-                @include botonesheaderstyle
-            }
-        }
-}
+      }
+    }
+  }

@@ -1,0 +1,25 @@
+main.mainhabitaciones {
+    display: block;
+    align-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    table.tabla {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      tr td#habitacion1 {
+        p {
+          &:first-of-type {
+            font-weight: bold;
+          }
+        }
+      }
+      tr td.habitacionesimg {
+        border-radius: 15%;
+      }
+      tr td.textohabitaciones {
+        margin: 0 30% 10px;
+      }
+    }
+  }

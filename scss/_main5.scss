@@ -1,0 +1,65 @@
+.maincontacto{
+    display: block;
+    text-align: center;
+  
+    &__contenedorimgcontacto{
+      align-items: center;
+      &__imgcontacto{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90vw;
+      }
+    }
+  
+    &__contenedortextocontacto{
+      text-align: center;
+      &__textocontacto{
+        p{
+          margin: 0;
+        }
+      }
+    }
+  
+    &__contenedorformdecontacto{
+      &__form{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+  
+        &__div{
+          padding: 10px;
+          &__label{
+            display: block;
+            text-align: left;
+            input{
+              width: 100%;
+              margin-top: 10px;
+            }
+          }
+        }
+  
+        &__cajadetextocontacto{
+          width: 100%;
+          text-align: center;
+          &__cajacontacto{
+            width: 100%;
+          }
+        }
+  
+        &__contenedorinputcontacto{
+          padding-top: 5px;
+          padding-bottom: 40px;
+          &__inputcontacto{
+            font-weight: bolder;
+            padding: 10px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 10%;
+          }
+        }
+      }
+    }
+  }
+  

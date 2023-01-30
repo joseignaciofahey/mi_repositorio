@@ -1,18 +1,28 @@
-footer{
-    width: 100%;
-    display: inline;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right 0; 
-    font-family: 'Cabin', sans-serif;
-    display: flex
-    align-items: center;
-    font-size: small;
-    background-color: $colorprincipal;
-    text-align: center;
-    grid-area: footer;
+$icon-height: 40px;
 
-    
+.footer {
+  background-color: lightblue;
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
 
+  .redesfooter {
+    .footerlista {
+      display: flex; 
+      flex-direction: row; 
+      justify-content: center;
+      text-align: center;
+
+      li {
+        a {
+          .footericonos {
+            height: $icon-height;
+            align-content: center;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
 }

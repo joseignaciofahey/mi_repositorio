@@ -1,0 +1,77 @@
+.landingcontainer{
+    display: flex; 
+    min-height: 79.3vh;
+    
+    .landingizquierda{
+      text-align: center;
+  
+      .contenedorfotolanding {
+        img.fotolanding{
+          width: 60%;
+          margin-top: 70px;
+          margin-bottom: 20px;
+          border-radius: 15%;
+          transition: ease-in 0.3s;
+  
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+  
+        p.titulolanding{
+          font-size: 2rem;
+          font-weight: bolder;
+        }
+  
+        p.textolanding2{
+          font-style: italic;
+          margin-top: 10px;
+          font-size: medium;
+          padding-left: 20%;
+          padding-right: 20%;
+        }
+      }
+    }
+  
+    .landingderecha{
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+  
+      .tarjetainputlanding{
+        padding: 50px;
+        margin-top: 100px;
+        background-color: blue;
+        border: thin;
+        border-radius: 25%;
+        text-align: center;
+        margin-right: 50px;
+  
+        .tituloinputlanding{
+          padding-bottom: 20px;
+          font-weight: bolder;
+          font-size: 2rem;
+          font-style: italic;
+        }
+  
+        .inputdelanding{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+  
+        .submitlanding{
+          font-weight: bold;
+          margin-top: 20px;
+          padding: 3px;
+          background-color: white;
+          border-radius: 25%;
+          border: none;
+          transition: 0.5s;
+  
+          &:hover{
+            background-color: red;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
